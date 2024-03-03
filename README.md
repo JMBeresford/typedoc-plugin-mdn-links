@@ -2,15 +2,87 @@
 
 Adds support for linking references to global types like `HTMLElement`, `WebAssembly`, and `Date` to their documentation pages on MDN.
 
-This is probably missing links! If you set `--logLevel Verbose`, it will print out when failing to resolve a symbol to a page on MDN. Pull requests to fix failed resolution are welcome!
+If you're explicitly referencing a type in a comment, you can use `{@link !HTMLElement}` to have it processed by this plugin.
+
+If you set `--logLevel Verbose`, it will print out when failing to resolve a symbol to a page on MDN. Pull requests to fix failed resolution are welcome!
 
 Supports TypeDoc 0.23.x, 0.24.x and 0.25.x
 
-| Option              | Default | Description                                                                                |
-| ------------------- | ------- | ------------------------------------------------------------------------------------------ |
-| resolveUtilityTypes | `true`  | Resolve links to `Partial`, `Omit`, etc. to their documentation on the TypeScript website. |
+| Option                  | Default | Description                                                                                |
+| ----------------------- | ------- | ------------------------------------------------------------------------------------------ |
+| resolveUtilityTypes     | `true`  | Resolve links to `Partial`, `Omit`, etc. to their documentation on the TypeScript website. |
+| additionalModuleSources | `false` | Specify additional node_modules to attempt to resolve links to MDN from.                   |
 
 ## Changelog
+
+### v3.1.17 (2024-02-25)
+
+-   Updated MDN API index with @mdn/browser-compat-data version 5.5.11
+
+### v3.1.16 (2024-02-11)
+
+-   Updated MDN API index with @mdn/browser-compat-data version 5.5.10
+
+### v3.1.15 (2024-02-04)
+
+-   Updated MDN API index with @mdn/browser-compat-data version 5.5.9
+
+### v3.1.14 (2024-01-28)
+
+-   Updated MDN API index with @mdn/browser-compat-data version 5.5.8
+
+### v3.1.13 (2024-01-21)
+
+-   Updated MDN API index with @mdn/browser-compat-data version 5.5.7
+
+### v3.1.12 (2024-01-14)
+
+-   Updated MDN API index with @mdn/browser-compat-data version 5.5.6
+
+### v3.1.11 (2024-01-07)
+
+-   Updated MDN API index with @mdn/browser-compat-data version 5.5.4
+
+### v3.1.10 (2023-12-31)
+
+-   Updated MDN API index with @mdn/browser-compat-data version 5.5.3
+
+### v3.1.9 (2023-12-24)
+
+-   Updated MDN API index with @mdn/browser-compat-data version 5.5.2
+
+### v3.1.8 (2023-12-17)
+
+-   Updated MDN API index with @mdn/browser-compat-data version 5.5.0
+
+### v3.1.7 (2023-12-10)
+
+-   Updated MDN API index with @mdn/browser-compat-data version 5.4.5
+
+### v3.1.6 (2023-12-03)
+
+-   Updated MDN API index with @mdn/browser-compat-data version 5.4.3
+
+### v3.1.5 (2023-11-26)
+
+-   Updated MDN API index with @mdn/browser-compat-data version 5.4.1
+
+### v3.1.4 (2023-11-19)
+
+-   Updated MDN API index
+
+### v3.1.3 (2023-11-18)
+
+-   Fixed broken publish due to missing data folder, #14.
+
+### v3.1.2 (2023-11-18)
+
+-   Updated MDN API index
+
+### v3.1.1 (2023-11-18)
+
+-   Updated MDN API index
+-   Fixed links to types defined in `@types/web`, #13
 
 ### v3.1.0 (2023-08-25)
 
